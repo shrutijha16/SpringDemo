@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="Specification" class="com.AutowirebyName.Specification">
+        <property name="make" value="Toyota"/>
+        <property name="model" value="2ce4"/>
+
+    </bean>
+    <bean id="MyCar" class="com.AutowirebyName.Car " autowire="byType"/>
+
+// for name Autowire add the name of the depenedt bean of car class
+    // for type add type of dependent bean of car class
+    // for by constructor just add constructor to car class of the dependent field
+
+</beans>
